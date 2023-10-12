@@ -1,4 +1,8 @@
 # mininet
+## open terminal eq
+```bash
+xterm s1
+```
 ## default topo
 ```bash
 cd ~/mininet/custom
@@ -100,3 +104,40 @@ if __name__ == '__main__':
 ```bash
 sudo python  ___.py
 ```
+# OpenDaylight
+```bash
+sudo apt-get openjdk-7-jdk
+```
+```bash
+sudo apt-get install maven
+```
+## extract 
+```bash
+tar -xzvf distribution-karaf-0.3.2-Lithium.SR2.tar.gz
+```
+## run karaf
+```bash
+cd distribution-karaf-0.3.2-Lithium.SR2/bin
+```bash
+./karaf -of13
+```
+# Ryu
+```bash
+#!/bin/bash
+#echo "step 1. install tools"
+sudo apt-get -y install git python-pip python-dev
+
+#echo "step 2. install python packages"
+sudo apt-get -y install python-eventlet python-routes python-webob python-paramiko
+
+#echo "step 4. Install RYO"
+sudo pip install setuptools --upgrade
+cd ryu;
+sudo python ./setup.py install
+
+#echo "Setup 5.install and upgrade python package"
+sudo pip install six --upgrade
+sudo pip install oslo.config msgpack-python
+sudo pip install eventlet --upgrade
+```
+
