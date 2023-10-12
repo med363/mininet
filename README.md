@@ -118,6 +118,7 @@ tar -xzvf distribution-karaf-0.3.2-Lithium.SR2.tar.gz
 ## run karaf
 ```bash
 cd distribution-karaf-0.3.2-Lithium.SR2/bin
+```
 ```bash
 ./karaf -of13
 ```
