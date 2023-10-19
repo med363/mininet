@@ -106,7 +106,7 @@ sudo python  ___.py
 ```
 # OpenDaylight
 ```bash
-sudo apt-get openjdk-7-jdk
+sudo apt-get install openjdk-7-jdk
 ```
 ```bash
 sudo apt-get install maven
